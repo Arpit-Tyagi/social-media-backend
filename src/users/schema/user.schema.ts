@@ -15,6 +15,18 @@ export class User {
   @Prop({ required: true })
   password: string;
 
+  @Prop({default: ""})
+  profilePicture: string;
+
+  @Prop({default: ""})
+  coverPicture: string;
+
+  @Prop()
+  friendlist: [];
+
+  @Prop()
+  requestList: [];
+
   @Prop({ required: true ,  type: "date" })
   dob: Date;
 
